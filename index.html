@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #box {
+            width: 400px;
+            height: 150px;
+            border: solid 2px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #box:hover {
+            cursor: pointer;
+        }
+
+        #box1 {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: aquamarine;
+            height: 100%;
+            width: 100%;
+            transform-origin: top;
+            transform: translateY(-100%);
+            transition: transform 1s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #box:hover #box1 {
+            transform: translateY(0%);
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="box">
+        <div id="box1">
+            <h1>Hola Mundo</h1>
+        </div>
+    </div>
+</body>
+
+</html>
